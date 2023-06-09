@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InspectionBoard", "InspectionBoard\InspectionBoard.csproj", "{B8E13C9D-1E4A-41E7-92B3-EE79FA35760B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8E13C9D-1E4A-41E7-92B3-EE79FA35760B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E13C9D-1E4A-41E7-92B3-EE79FA35760B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E13C9D-1E4A-41E7-92B3-EE79FA35760B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E13C9D-1E4A-41E7-92B3-EE79FA35760B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84EE3FAF-6C9F-4D6D-BC24-B1680B95C595}
+	EndGlobalSection
+EndGlobal
