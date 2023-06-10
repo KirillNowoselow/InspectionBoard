@@ -124,6 +124,11 @@ namespace InspectionBoard.Windows
             Year_of_admission.Content = DateTime.Now.Year + " год";
         }
 
+        private void radio_button_no3_Checked(object sender, RoutedEventArgs e)
+        {
+            Year_of_admission.Content = "";
+        }
+
         #endregion
 
         private void Button_Cancel_Click(object sender, RoutedEventArgs e)
@@ -131,23 +136,19 @@ namespace InspectionBoard.Windows
             this.Hide();
         }
 
-        private void radio_button_no3_Checked(object sender, RoutedEventArgs e)
-        {
-            Year_of_admission.Content = "";
-        }
 
         private void Button_Add_Student(object sender, RoutedEventArgs e)
         {
             using (var db = new ApplicationContext())
             {
-                db.Database.EnsureCreated();
-                Student student = new Student
+                var student = new Student()
                 {
                     first_name = first_name.Text,
                     last_name = last_name.Text
                 };
                 db.Students.Add(student);
                 db.SaveChanges();
+                Console.WriteLine(first_name);
             }
         }
     }

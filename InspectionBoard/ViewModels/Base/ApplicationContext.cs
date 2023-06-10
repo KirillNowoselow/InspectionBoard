@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using InspectionBoard.Models;
+using System.Data.SqlClient;
 
 namespace InspectionBoard.ViewModels.Base
 {
@@ -15,12 +16,12 @@ namespace InspectionBoard.ViewModels.Base
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=InspectionBoard; Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-RNH8FP0;Initial Catalog=InspectionBoard; Trusted_Connection=True; Integrated Security=False; TrustServerCertificate=True;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Student>()
-                .HasNoKey();
+                .HasKey(s => s.id_student);
         }
     }
 }

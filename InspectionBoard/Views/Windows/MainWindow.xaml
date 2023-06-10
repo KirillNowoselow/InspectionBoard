@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:InspectionBoard"
         xmlns:vm="clr-namespace:InspectionBoard.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+
 
     <Window.DataContext>
         <vm:StudentViewModel/>

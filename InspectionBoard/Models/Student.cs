@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace InspectionBoard.Models
 {
-    class Student
+    public class Student
     {
-        [Key] 
-        public int id_student { get; set; }
+        [Key] public int id_student { get; set; }
+
         public string last_name { get; set; }
         public string first_name { get; set; }
     }
